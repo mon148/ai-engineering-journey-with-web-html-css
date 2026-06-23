@@ -1,7 +1,7 @@
 /*DESIGN TOKENS */
 :root {
   /* Palette */ 
-  background-image: url("/images/bulb_glow.jpg");
+  background-image: url("images/bulb_glow.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
