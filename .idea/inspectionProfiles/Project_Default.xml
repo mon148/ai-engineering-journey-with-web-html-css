@@ -1,0 +1,66 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="annotated-types" />
+          <option value="beautifulsoup4" />
+          <option value="black" />
+          <option value="certifi" />
+          <option value="cffi" />
+          <option value="charset-normalizer" />
+          <option value="click" />
+          <option value="colorama" />
+          <option value="cryptography" />
+          <option value="google-ai-generativelanguage" />
+          <option value="google-api-core" />
+          <option value="google-api-python-client" />
+          <option value="google-auth" />
+          <option value="google-auth-httplib2" />
+          <option value="google-generativeai" />
+          <option value="googleapis-common-protos" />
+          <option value="grpcio" />
+          <option value="grpcio-status" />
+          <option value="httplib2" />
+          <option value="idna" />
+          <option value="mypy_extensions" />
+          <option value="packaging" />
+          <option value="pathspec" />
+          <option value="platformdirs" />
+          <option value="proto-plus" />
+          <option value="protobuf" />
+          <option value="pyasn1" />
+          <option value="pyasn1_modules" />
+          <option value="pycparser" />
+          <option value="pydantic" />
+          <option value="pydantic_core" />
+          <option value="pyparsing" />
+          <option value="python-dotenv" />
+          <option value="pytokens" />
+          <option value="requests" />
+          <option value="rsa" />
+          <option value="soupsieve" />
+          <option value="tqdm" />
+          <option value="typing-inspection" />
+          <option value="typing_extensions" />
+          <option value="uritemplate" />
+          <option value="urllib3" />
+          <option value="fastapi" />
+          <option value="uvicorn" />
+          <option value="pyyaml" />
+          <option value="llama-index" />
+          <option value="llama-index-core" />
+          <option value="llama-index-vector-stores-faiss" />
+          <option value="faiss-cpu" />
+          <option value="sqlalchemy" />
+          <option value="aiosqlite" />
+          <option value="llama-index-llmms-huggingface-cpp" />
+          <option value="llama-index-llms-google-genai" />
+          <option value="google-genai" />
+          <option value="httpx" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

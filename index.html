@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VoltexPro – Certified Electrical Installation, CCTV Surveillance, and Microsoft Technology Solutions in Nigeria." />
+  <title>God's Light Tech – Electrical · CCTV · Smart Homes · AI and Automation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" /> 
+
+  <!-- link to the external css -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!--OAST NOTIFICATION-->
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <!--NAVIGATION-->
+  
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+
+      <!-- Logo -->
+      <a href="#" class="nav-logo" aria-label="GLT Home">
+        <div class="nav-logo-icon" aria-hidden="true">
+          <img src="/images/glt_logo.png">
+        </div>
+        <span class="nav-logo-text">God's Light Tech</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#testimonials">Clients</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+
+      <!-- Desktop CTA Buttons -->
+      <div class="nav-actions">
+        <button class="btn btn-ghost" id="nav-login-btn">LOGIN</button>
+        <button class="btn btn-primary" id="nav-signup-btn">GET STARTED</button>
+      </div>
+
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span>services</span>
+        <span>how</span>
+        <span>clients</span>
+      </button>
+    </div>
+  </nav>
+
+  <!--MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+    <button class="close-btn" id="close-menu" aria-label="Close menu">✕</button>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#how" class="mobile-link">How It Works</a>
+    <a href="#testimonials" class="mobile-link">Clients</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <button class="btn btn-primary" id="mobile-signup-btn">Get Started</button>
+  </div>
+
+       <!--HERO SECTION-->
+  <section id="hero" aria-label="Hero">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="container">
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow">Certified · Reliable · Professional · budget-focused</p>
+        <h1 class="display hero-title">
+          POWERING<br/>
+          <span class="amber">YOUR WORLD.</span><br/>
+          SECURING IT TOO.
+        </h1>
+        <p class="hero-subtitle">
+          From electrical installations to CCTV surveillance, smart homes installation and AI Automation
+          solutions — God's Light Tech delivers end-to-end technical services built for homes,
+          offices, and businesses that refuse to settle for none quality and noe durable data driven installations!.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="hero-request-btn">Request a Service &nbsp;→</button>
+          <a href="#services" class="btn btn-ghost">View our Services</a>
+        </div>
+        <div class="hero-badge">
+          <div class="dot" aria-hidden="true"></div>
+          <span>Available for new projects · Response within 2 hours</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--STATS STRIP -->
+  <div class="stats-strip" aria-label="Key statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-num">500+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">8+</div>
+          <div class="stat-label">Years in Business</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">98%</div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">Emergency Support</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--SERVICES SECTION -->
+  <section id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Our Services</p>
+        <h2 class="display section-title" id="services-heading">FOUR CORE SERVICES.<br/>ONE TRUSTED & VERIFIED TEAM.</h2>
+        <p class="section-sub">Certified engineers across every discipline, delivering installations that last and support that doesn't disappear after the invoice.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Electrical -->
+        <article class="service-card" data-service="Electrical Installation">
+          <div class="svc-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h3 class="svc-title">Electrical Installation</h3>
+          <p class="svc-desc">Residential and commercial wiring, panel upgrades, circuit breakers, and complete electrical fitouts — Maintenance guaranteed, done safely.</p>
+          <ul class="svc-features" role="list">
+            <li>Full wiring &amp; rewiring</li>
+            <li>Panel / DB board upgrades</li>
+            <li>Lighting &amp; socket installation</li>
+            <li>Generator &amp; inverter setup</li>
+            <li>Maintenance &amp; Monthly maintenance</li>
+            <li>Electrical inspections &amp; certification</li>
+          </ul>
+          <button class="svc-cta" onclick="openRequest('Electrical Installation')">Request This Service <span aria-hidden="true">→</span>
+          </button>
+        </article>
+
+        <!-- CCTV -->
+        <article class="service-card" data-service="CCTV Installation">
+          <div class="svc-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 7l-7 5 7 5V7z"/>
+              <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+            </svg>
+          </div>
+          <h3 class="svc-title">CCTV Installation</h3>
+          <p class="svc-desc">Surveillance Systems With Strict Security.</p>
+          <ul class="svc-features" role="list">
+            <li>IP &amp; analog camera supply &amp; install</li>
+            <li>NVR / DVR configuration</li>
+            <li>PTZ &amp; Solar AI cameras</li>
+            <li>Remote mobile monitoring setup</li>
+            <li>Night vision &amp; motion detection</li>
+            <li>360<sup>0</sup> rotation</li>
+            <li>Humanoid detection and notification</li>
+            <li>Solar PTZ cameras</li>
+            <li>Spy solar cameras for farms or remote areas</li>
+            <li>Access control integration</li>
+          </ul>
+          <button class="svc-cta" onclick="openRequest('CCTV Installation')">Request This Service <span aria-hidden="true">→</span></button>
+        </article>
+
+        <!-- Microsoft -->
+        <article class="service-card" data-service="Microsoft Solutions">
+          <div class="svc-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="9" height="9" rx="1"/>
+              <rect x="13" y="2" width="9" height="9" rx="1"/>
+              <rect x="2" y="13" width="9" height="9" rx="1"/>
+              <rect x="13" y="13" width="9" height="9" rx="1"/>
+            </svg>
+          </div>
+          <h3 class="svc-title">AI Authomation</h3>
+          <p class="svc-desc">Database set up, Database maintenance, Market data analysis and insights, AI Agent assistant set up, Chatbot for businesses,  Azure cloud onboarding, and ongoing IT support tailored to your business scale.</p>
+          <ul class="svc-features" role="list">
+            <li>Database Setup</li>
+            <li>Database maintenance</li>
+            <li>Market data analysis and insights</li>
+            <li>AI agent assistant set up</li>
+            <li>Chatbot for businesses</li>
+            <li>Azure cloud migration &amp; support</li>
+            <li>Active Directory &amp; user management</li>
+            <li>Ongoing IT helpdesk support</li>
+          </ul>
+          <button class="svc-cta" onclick="openRequest('Microsoft Solutions')">Request This Service <span aria-hidden="true">→</span></button>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!--HOW IT WORKS-->
+  <section id="how" aria-labelledby="how-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">The Process</p>
+        <h2 class="display section-title" id="how-heading">FROM REQUEST<br/>TO COMPLETION</h2>
+        <p class="section-sub">No guesswork. A clear, four-step process so you always know exactly where things stand.</p>
+      </div>
+      <div class="how-grid">
+        <div class="how-connector" aria-hidden="true"></div>
+        <div class="how-step">
+          <div class="how-num" aria-hidden="true">01</div>
+          <h3>Submit a Request</h3>
+          <p>Create an account or use the quick-quote form. Describe what you need — takes under two minutes.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-num" aria-hidden="true">02</div>
+          <h3>We Assess &amp; Quote</h3>
+          <p>A certified engineer reviews your request and sends a transparent, itemised quote within 2 hours.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-num" aria-hidden="true">03</div>
+          <h3>Schedule the Work</h3>
+          <p>Accept the quote and pick a date and time that works for you. We arrive on time, every time!.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-num" aria-hidden="true">04</div>
+          <h3>Certified &amp; Done</h3>
+          <p>Work is completed, tested, and signed off. You receive a completion certificate and full documentation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS-->
+  <section id="testimonials" aria-labelledby="testi-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Client Stories</p>
+        <h2 class="display section-title" id="testi-heading">WHAT OUR CLIENTS SAY</h2>
+      </div>
+      <div class="testi-grid">
+
+        <article class="testi-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testi-text">"GLT rewired our entire office block in three days with zero downtime. The team was meticulous — every cable routed cleanly, every circuit labeled. Genuinely impressed!."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">AO</div>
+            <div>
+              <div class="testi-name">Bidex Abidemi</div>
+              <div class="testi-role">Facilities Manager, EKiti</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testi-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testi-text">"Had a 16-camera CCTV system installed at our supermarket. The remote viewing works perfectly and the night footage is crystal clear. Setup took a single day."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">CI</div>
+            <div>
+              <div class="testi-name">Chioma Ihejirika</div>
+              <div class="testi-role">Business Owner, Abuja</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testi-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testi-text">"They migrated our entire company to Microsoft 365 and set up Azure without any data loss. The ongoing helpdesk support has been responsive and knowledgeable every time."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">EK</div>
+            <div>
+              <div class="testi-name">Emeka Kalu</div>
+              <div class="testi-role">CTO, Fintech Startup</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / QUICK QUOTE-->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: Contact Info -->
+        <div class="contact-info">
+          <p class="eyebrow">Get in Touch</p>
+          <h2 class="display contact-title" id="contact-heading">LET'S TALK<br/>ABOUT YOUR<br/>PROJECT.</h2>
+          <p class="contact-body">Whether it's a single socket or an enterprise network — we assess every job with the same professionalism. Reach out and we'll respond within 2 hours during business hours.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <div class="svc-icon contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.1 2.2 2 2 0 012.1.02h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="detail-label">Phone</div>
+                <div class="detail-value">+2348134330174 GLT</div>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="svc-icon contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <div class="detail-label">Email</div>
+                <div class="detail-value">egwumonday903@gmail.com</div>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="svc-icon contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="10" r="3"/>
+                  <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 00-16 0c0 3 2.7 6.9 8 11.7z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="detail-label">Location</div>
+                <div class="detail-value">AKure, Nigeria · Remote Available</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Quick Quote Form -->
+        <div class="quick-quote-box">
+          <h3 class="qq-title">Quick Quote</h3>
+          <p class="qq-sub">No account needed — just fill this in and we'll reach out.</p>
+          <div id="quick-success" class="form-success" role="alert">✓ Message sent! We'll be in touch within 2 hours.</div>
+          <div class="form-group">
+            <label for="qq-name">Your Name</label>
+            <input type="text" id="qq-name" placeholder="e.g. Emeka Obi" autocomplete="name" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="qq-phone">Phone</label>
+              <input type="tel" id="qq-phone" placeholder="+234 …" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="qq-email">Email</label>
+              <input type="email" id="qq-email" placeholder="you@email.com" autocomplete="email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="qq-service">Service Needed</label>
+            <select id="qq-service">
+              <option value="">Select a service…</option>
+              <option>Electrical Installation</option>
+              <option>CCTV Installation</option>
+              <option>Smart Homes</option>
+              <option>AI and Automation</option>
+              <option>Other / Not Sure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="qq-desc">Brief Description</label>
+            <textarea id="qq-desc" placeholder="Tell us what you need — location, scale, any relevant details…"></textarea>
+          </div>
+          <button class="btn btn-primary btn-full" id="qq-submit-btn">Send Request →</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--CTA BANNER-->
+  <div id="cta-banner" aria-label="Call to action">
+    <div class="container cta-inner">
+      <h2 class="display">READY TO GET STARTED?</h2>
+      <p>Create an account to track your requests and manage your projects.</p>
+      <button class="btn-dark" id="cta-signup-btn">Create Free Account &nbsp;→</button>
+    </div>
+  </div>
+
+  <!--FOOTER-->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#" class="nav-logo" aria-label="VoltexPro Home">
+            <div class="nav-logo-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#0A1628" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <span class="nav-logo-text">GLT</span>
+          </a>
+          <p>Certified electrical, CCTV, Smart Homes, AI and Automation services built on transparency, skill, and reliability.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul role="list">
+            <li><a href="#services">Electrical Installation</a></li>
+            <li><a href="#services">CCTV Installation</a></li>
+            <li><a href="#services">Smart Homes</a></li>
+            <li><a href="#services">AI and Automation</a></li>
+            <li><a href="#contact">Quick Quote</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>God's Light Tech</h4>
+          <ul role="list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Certifications</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Goal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul role="list">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Data Privacy</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 GLT Limited. All rights reserved.</p>
+        <p>RC: 123456 · Akure, Nigeria</p>
+      </div>
+    </div>
+  </footer>
+
+  <!--AUTH MODAL-->
+  <div class="modal-overlay" id="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('auth-modal')" aria-label="Close">✕</button>
+      <div class="modal-logo" aria-hidden="true">
+        <div class="modal-logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0A1628" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <span class="modal-logo-text">GLT</span>
+      </div>
+      <h2 id="auth-title">Welcome Back</h2>
+      <p class="sub" id="auth-sub">Log in to track your service requests.</p>
+
+      <div class="tabs" role="tablist">
+        <button class="tab-btn active" role="tab" aria-selected="true" onclick="switchTab('login')">LOGIN</button>
+        <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('signup')">Create Account</button>
+      </div>
+
+      <!-- Login Tab -->
+      <div class="tab-panel active" id="tab-login" role="tabpanel">
+        <div class="form-success" id="login-success" role="alert">✓ Logged in successfully!</div>
+        <div class="form-group">
+          <label for="login-email">Email Address</label>
+          <input type="email" id="login-email" placeholder="you@email.com" autocomplete="email" />
+          <div class="form-error" id="login-err" role="alert">Please enter a valid email and password.</div>
+        </div>
+        <div class="form-group">
+          <label for="login-pass">Password</label>
+          <input type="password" id="login-pass" placeholder="••••••••" autocomplete="current-password" />
+        </div>
+        <button class="btn btn-primary btn-full" id="login-btn">LOGIN →</button>
+        <div class="forgot-link">
+          <a href="#">Forgot your password?</a>
+        </div>
+      </div>
+
+      <!-- Signup Tab -->
+      <div class="tab-panel" id="tab-signup" role="tabpanel">
+        <div class="form-success" id="signup-success" role="alert">✓ Account created! Welcome to GLT.</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="su-first">First Name</label>
+            <input type="text" id="su-first" placeholder="Emeka" autocomplete="given-name" />
+          </div>
+          <div class="form-group">
+            <label for="su-last">Last Name</label>
+            <input type="text" id="su-last" placeholder="Obi" autocomplete="family-name" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="su-email">Email Address</label>
+          <input type="email" id="su-email" placeholder="you@email.com" autocomplete="email" />
+          <div class="form-error" id="su-err" role="alert">Please fill all fields correctly😊.</div>
+        </div>
+        <div class="form-group">
+          <label for="su-phone">Phone Number</label>
+          <input type="tel" id="su-phone" placeholder="+234 800 000 0000" autocomplete="tel" />
+        </div>
+        <div class="form-group">
+          <label for="su-pass">Password</label>
+          <input type="password" id="su-pass" placeholder="At least 8 characters" autocomplete="new-password" />
+        </div>
+        <div class="form-group">
+          <div class="checkbox-group">
+            <input type="checkbox" id="su-agree" />
+            <label for="su-agree">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</label>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-full" id="signup-btn">Create Account →</button>
+      </div>
+    </div>
+  </div>
+
+  <!----> SERVICE REQUEST MODAL-->
+  <div class="modal-overlay" id="request-modal" role="dialog" aria-modal="true" aria-labelledby="request-title">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('request-modal')" aria-label="Close">✕</button>
+      <div class="modal-logo" aria-hidden="true">
+        <div class="modal-logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0A1628" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <span class="modal-logo-text">GLT</span>
+      </div>
+      <h2 id="request-title">Request a Service</h2>
+      <p class="sub">Fill in the details below. We'll confirm and send a quote within 2 hours.</p>
+      <div class="form-success" id="req-success" role="alert">✓ Request submitted! Check your email for confirmation.</div>
+      <div class="form-group">
+        <label for="req-type">Service Type</label>
+        <select id="req-type">
+          <option value="">Select a service…</option>
+          <option>Electrical Installation</option>
+          <option>CCTV Installation</option>
+          <option value="">Smart Home installation</option>
+          <option value="">AI Aand Automation</option>
+          <option>Microsoft Solutions</option>
+          <option>Other / Not Sure</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="req-name">Your Name</label>
+          <input type="text" id="req-name" placeholder="Full name" autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <label for="req-phone">Phone</label>
+          <input type="tel" id="req-phone" placeholder="+234 …" autocomplete="tel" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="req-email">Email</label>
+        <input type="email" id="req-email" placeholder="you@email.com" autocomplete="email" />
+        <div class="form-error" id="req-err" role="alert">Please complete all required fields.</div>
+      </div>
+      <div class="form-group">
+        <label for="req-location">Property / Location</label>
+        <input type="text" id="req-location" placeholder="e.g. 3-bedroom flat, Victoria Island, Lagos" />
+      </div>
+      <div class="form-group">
+        <label for="req-date">Preferred Date</label>
+        <input type="date" id="req-date" />
+      </div>
+      <div class="form-group">
+        <label for="req-details">Project Details</label>
+        <textarea id="req-details" placeholder="Describe the scope of work, any existing setup, and what you need done…"></textarea>
+      </div>
+      <button class="btn btn-primary btn-full" id="req-submit-btn">Submit Request →</button>
+    </div>
+  </div>
+
+  <!---->DASHBOARD MODAL -->
+  <div class="modal-overlay" id="dashboard-modal" role="dialog" aria-modal="true" aria-labelledby="dash-heading">
+    <div class="modal modal-wide">
+      <button class="modal-close" onclick="closeModal('dashboard-modal')" aria-label="Close">✕</button>
+
+      <div class="dash-header">
+        <div class="dash-user">
+          <div class="dash-avatar" id="dash-avatar" aria-hidden="true">YB</div>
+          <div>
+            <div class="dash-name" id="dash-name">Yusuf Babalola</div>
+            <div class="dash-role">GLT Client</div>
+          </div>
+        </div>
+        <button class="btn btn-ghost btn-sm" id="logout-btn">Log Out</button>
+      </div>
+
+      <h2 class="sr-only" id="dash-heading">My Dashboard</h2>
+
+      <div class="dash-cards">
+        <div class="dash-card">
+          <div class="num">3</div>
+          <div class="lbl">Total Requests</div>
+        </div>
+        <div class="dash-card">
+          <div class="num">1</div>
+          <div class="lbl">In Progress</div>
+        </div>
+        <div class="dash-card">
+          <div class="num">2</div>
+          <div class="lbl">Completed</div>
+        </div>
+      </div>
+
+      <p class="requests-heading">Your Requests</p>
+      <div class="requests-list" role="list">
+        <div class="request-item" role="listitem">
+          <div class="request-info">
+            <h4>Electrical Installation – Office Rewiring</h4>
+            <p>Submitted 12 Jan 2025 · 3-storey office, VI, Lagos</p>
+          </div>
+          <span class="badge badge-done">Completed</span>
+        </div>
+        <div class="request-item" role="listitem">
+          <div class="request-info">
+            <h4>CCTV Installation – 8 Cameras</h4>
+            <p>Submitted 3 Mar 2025 · Warehouse, Ikeja</p>
+          </div>
+          <span class="badge badge-inprogress">In Progress</span>
+        </div>
+        <div class="request-item" role="listitem">
+          <div class="request-info">
+            <h4>AI Assistant Agent, 20 Users</h4>
+            <p>Submitted 18 Apr 2025 · Remote</p>
+          </div>
+          <span class="badge badge-done">Completed</span>
+        </div>
+      </div>
+
+      <button class="btn btn-primary btn-full" id="dash-new-request-btn" style="margin-top: 24px;">+ New Service Request</button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
