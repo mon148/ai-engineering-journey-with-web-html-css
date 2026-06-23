@@ -775,8 +775,7 @@ section {
 }
 
 
-/*
-   14. CTA BANNER*/
+/*CTA BANNER*/
 #cta-banner {
   background: linear-gradient(135deg, rgba(212, 177, 64, 0.067) 0%, var(--amber) 100%);
   padding: 80px 0;
@@ -791,14 +790,13 @@ section {
   margin-bottom: 16px;
 }
 .cta-inner p {
-  color: rgba(10, 22, 40, 0.65);
+  color: rgba(10, 22, 90, 0.55);
   margin-bottom: 36px;
   font-size: 1rem;
 }
 
 
-/*
-   15. FOOTER*/
+/*FOOTER*/
 footer {
   background: var(--carbon);
   border-top: 1px solid rgba(255, 255, 255, 0.07);
